@@ -22,20 +22,4 @@ public class DisplayMessageActivity extends AppCompatActivity {
         textView.setText(message);
         setContentView(textView);
     }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.button) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-    public static class PlaceholderFragment extends Fragment {
-        public PlaceholderFragment() { }
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_display_message, container, false);
-            return rootView;
-        }
-    }
 }

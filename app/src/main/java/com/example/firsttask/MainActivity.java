@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sendMessage(View v){
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText emailEditText = (EditText) findViewById(R.id.editTextTextEmailAddress);
-        EditText passwordEditText = (EditText) findViewById(R.id.editTextTextPassword);
+        EditText emailEditText = findViewById(R.id.editTextTextEmailAddress);
+        EditText passwordEditText = findViewById(R.id.editTextTextPassword);
         String email = emailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
         String message = email + "\n"+ password;
