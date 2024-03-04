@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Авторизация</string>
+    <string name="buttonText">Войти</string>
+    <string name="email">Эл.Почта</string>
+    <string name="password">Пароль</string>
+
+</resources>
