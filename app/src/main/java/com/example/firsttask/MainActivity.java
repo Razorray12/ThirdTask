@@ -8,11 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,14 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void sendMessage(View v){
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText emailEditText = findViewById(R.id.editTextTextEmailAddress);
-        EditText passwordEditText = findViewById(R.id.editTextTextPassword);
-        String email = emailEditText.getText().toString();
-        String password = passwordEditText.getText().toString();
-        String message = email + "\n"+ password;
-        intent.putExtra(EXTRA_MESSAGE, message);
+    public void onNextActivity(View view){
+        String email = ((EditText) findViewById(R.id.editTextTextEmailAddress)).getText().toString();
+        String password = ((EditText) findViewById(R.id.editTextTextPassword)).getText().toString();
+        Data data = new Data("John", 30,email,password);
+        Intent intent = new Intent(this, FrameActivity.class);
+        intent.putExtra("Data", data);
         startActivity(intent);
         Toast.makeText(this, "Вы вошли!", Toast.LENGTH_SHORT).show();
     }

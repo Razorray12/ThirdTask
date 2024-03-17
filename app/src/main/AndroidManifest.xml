@@ -13,14 +13,22 @@
         android:theme="@style/Theme.FirstTask"
         tools:targetApi="31">
         <activity
-            android:name=".DisplayMessageActivity"
+            android:name=".FrameActivity"
+            android:theme="@style/AppTheme.LoggedIn"
+            android:exported="false" />
+        <activity
+            android:name=".LinearActivity"
+            android:theme="@style/AppTheme.LoggedIn"
+            android:exported="false" />
+        <activity
+            android:name=".RelativeActivity"
+            android:theme="@style/AppTheme.LoggedIn"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

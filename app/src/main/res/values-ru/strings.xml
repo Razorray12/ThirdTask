@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="buttonText">Войти</string>
+    <string name="password">Пароль</string>
+    <string name="email">Эл.Почта</string>
+    <string name="ButtonText2">Назад</string>
+    <string name="app_name">Авторизация</string>
+    <string name="textview">Текст</string>
+    <string name="Next">Далее</string>
+
+</resources>
